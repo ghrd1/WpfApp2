@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp2.RegWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="RegWindow" Height="350" Width="500">
+    <Grid Background="#FF12B9A6">
+        <TextBox x:Name="registerUsernameTextBox" HorizontalAlignment="Left" Margin="169,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="registerPasswordBox" HorizontalAlignment="Left" Margin="169,149,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Логін" HorizontalAlignment="Left" Margin="92,94,0,0" VerticalAlignment="Top" Background="#FFA090BD"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="92,145,0,0" VerticalAlignment="Top" Background="#FFA090BD"/>
+        <Button x:Name="RegisterUserButton" Content="Створити профіль" HorizontalAlignment="Left" Margin="173,195,0,0" VerticalAlignment="Top"  Height="24" Width="112" Click="RegisterUserButton_Click" Background="#FFA090BD"/>
+
+    </Grid>
+</Window>

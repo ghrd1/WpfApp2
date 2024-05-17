@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp2.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="UserWindow" Height="540" Width="800">
+    <Grid Background="#FF12B9A6" Margin="0,0,0,-39">
+        <Image x:Name="carImage" Margin="42,50,538,191"/>
+        <Label x:Name="carBrandLabel" Content="Label" HorizontalAlignment="Left" Margin="418,83,0,0" VerticalAlignment="Top" Height="30" Width="122"/>
+        <Label x:Name="carNameLabel" Content="Label" HorizontalAlignment="Left" Margin="418,149,0,0" VerticalAlignment="Top" Height="30" Width="122"/>
+        <Label x:Name="carPriceLabel" Content="Label" HorizontalAlignment="Left" Margin="418,214,0,0" VerticalAlignment="Top" Height="30" Width="122"/>
+        <Button x:Name="nextButton" Content="Далі" HorizontalAlignment="Left" Margin="600,336,0,0" VerticalAlignment="Top" Height="35" Width="150" Click="nextButton_Click" Background="#FFA090BD"/>
+        <Label x:Name="carIDLabel" Content="Label" HorizontalAlignment="Left" Margin="614,80,0,0" VerticalAlignment="Top" Height="30" Width="122"/>
+        <Label x:Name="Марка_Label" Content="Марка" HorizontalAlignment="Left" Margin="350,83,0,0" VerticalAlignment="Top" Background="#FFA090BD"/>
+        <Label x:Name="Модель_Label" Content="Модель" HorizontalAlignment="Left" Margin="346,149,0,0" VerticalAlignment="Top" Background="#FFA090BD"/>
+        <Label x:Name="Ціна_Label" Content="Ціна" HorizontalAlignment="Left" Margin="350,214,0,0" VerticalAlignment="Top" Background="#FFA090BD"/>
+        <Label x:Name="Номер_Label" Content="Номер" HorizontalAlignment="Left" Margin="545,80,0,0" VerticalAlignment="Top" Background="#FFA090BD"/>
+        <Button x:Name="back_Button" Content="Назад" HorizontalAlignment="Left" Margin="419,336,0,0" VerticalAlignment="Top" Height="35" Width="150" Click="back_Button_Click" Background="#FFA090BD"/>
+        <TextBox x:Name="Ціна" HorizontalAlignment="Left" Margin="418,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="Модель" HorizontalAlignment="Left" Margin="418,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="Марка" HorizontalAlignment="Left" Margin="405,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Label x:Name="Розташування_Label" Content="Розташування" HorizontalAlignment="Left" Margin="545,149,0,0" VerticalAlignment="Top" Background="#FFA090BD"/>
+        <Label x:Name="carLocationLabel" Content="Label" HorizontalAlignment="Left" Margin="656,149,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="carLocationTextBox" HorizontalAlignment="Left" Margin="647,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <CheckBox x:Name="bronCheckBox" Content="Бронювання" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="545,227,0,0" Background="#FFA090BD"/>
+        <Button x:Name="price_Button" Content="Розрахувати вартість" HorizontalAlignment="Left" Margin="235,336,0,0" VerticalAlignment="Top" Height="35" Width="150" Click="price_Button_Click" Background="#FFA090BD"/>
+        <Label x:Name="Дні" Content="Дні" HorizontalAlignment="Left" Margin="256,155,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label x:Name="Години" Content="Години" HorizontalAlignment="Left" Margin="486,150,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Button x:Name="count_Button" Content="Підрахувати" HorizontalAlignment="Left" Margin="235,336,0,0" VerticalAlignment="Top" Height="35" Width="150" Click="count_Button_Click" Visibility="Hidden" Background="#FFA090BD"/>
+        <TextBox x:Name="Дні_textBox" HorizontalAlignment="Left" Margin="321,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="Години_textBox" HorizontalAlignment="Left" Margin="569,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <Button x:Name="bron_Button" Content="Забронювати" HorizontalAlignment="Left" Margin="40,336,0,0" VerticalAlignment="Top" Height="35" Width="150" Click="bron_Button_Click" Background="#FFA090BD"/>
+        <Label Content="Пошук за маркою" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,380,0,0"/>
+        <TextBox x:Name="searchTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="160,380,0,0"/>
+        <Button Content="Пошук" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="320,380,0,0" Click="searchButton_Click"/>
+        <Button x:Name="back_serButton" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="418,380,0,0" Click="back_serButton_Click"/>
+        <Button x:Name="next_serButton" Content="Далі" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="517,380,0,0" Click="next_serButton_Click"/>
+        <Label Content="Пошук за ціною" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,423,0,0"/>
+        <TextBox x:Name="price_TextBox" HorizontalAlignment="Left" Margin="160,427,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" PreviewTextInput="price_TextBox_PreviewTextInput"/>
+        <Button x:Name="SearchByPrice" Content="Пошук" HorizontalAlignment="Left" Margin="320,426,0,0" VerticalAlignment="Top" Width="75" Click="SearchByPrice_Click"/>
+        <Button x:Name="back_serButton1" Content="Назад" HorizontalAlignment="Left" Margin="419,427,0,0" VerticalAlignment="Top" Width="74" Click="back_serButton_Click"/>
+        <Button x:Name="next_serButton2" Content="Далі" HorizontalAlignment="Left" Margin="517,429,0,0" VerticalAlignment="Top" Width="75" Click="next_serButton_Click"/>
+        <Label Content="Пошук за містом" HorizontalAlignment="Left" Margin="40,464,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="city_TextBox" HorizontalAlignment="Left" Margin="160,468,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="SearchByCity" Content="Пошук" HorizontalAlignment="Left" Margin="321,467,0,0" VerticalAlignment="Top" Width="75" Click="SearchByCity_Click"/>
+        <Button x:Name="back_serButton2" Content="Назад" HorizontalAlignment="Left" Margin="419,466,0,0" VerticalAlignment="Top" Width="75" Click="back_serButton_Click"/>
+        <Button x:Name="next_serButton3" Content="Далі" HorizontalAlignment="Left" Margin="517,466,0,0" VerticalAlignment="Top" Width="75" Click="next_serButton_Click"/>
+    </Grid>
+</Window>
